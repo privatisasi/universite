@@ -1,6 +1,8 @@
-<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+<?php
 
-class Welcome extends CI_Controller {
+if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+
+class Home extends AP_Controller {
 
 	/**
 	 * Index Page for this controller.
