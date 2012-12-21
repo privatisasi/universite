@@ -9,10 +9,11 @@ class AP_Loader extends CI_Loader{
 
 	function render_css($name = null){
 		if(!is_array($name)){
-			return "<link href='".base_url()."assets/css/".$name."' rel='stylesheet' type='text/css'/>";
+			echo "<link href='".base_url()."assets/css/".$name."' rel='stylesheet' type='text/css'/>";
+			return true;
 		} else {
 			foreach ($name as $single_name) {
-				echo "<link href='".base_url()."assets/css/".$single."' rel='stylesheet' type='text/css'/>";	
+				echo "<link href='".base_url()."assets/css/".$single_name."' rel='stylesheet' type='text/css'/>";	
 			}
 			return true;
 		}
@@ -21,10 +22,11 @@ class AP_Loader extends CI_Loader{
 
 	function render_js($name = null){
 		if(!is_array($name)){
-			return "<script src='".base_url()."assets/css/".$name."' type='text/javascript'></script>";
+			 echo "<script src='".base_url()."assets/js/".$name."' type='text/javascript'></script>";
+			 return true;
 		} else {
 			foreach ($name as $single_name) {
-				echo "<script src='".base_url()."assets/css/".$single."' type='text/javascript'></script>";			
+				echo "<script src='".base_url()."assets/js/".$single_name."' type='text/javascript'></script>";			
 			}
 			return true;
 		}
