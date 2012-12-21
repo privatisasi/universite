@@ -1,8 +1,8 @@
 <!doctype html>
 <html>
 	<head>
-		<title> <?php echo ($ap_title) ? $ap_title : 'Universite' ?> </title>
-
+		<title> <?php echo (isset($ap_title)) ? $ap_title : 'Universite'; ?> </title>
+		<?php ?>
 	</head>
 	<body>
 		<div class="container main">
@@ -12,11 +12,4 @@
 				<!-- Navigation -->
 
 			</div>
-			<div class="row content">
-
-				<!-- Sidebar -->
-
-				<!-- Main Content -->
-
-			</div>
-		</div>
+		

@@ -18,21 +18,20 @@ class AP_Controller extends CI_Controller{
 		// define superclass 
 		parent::__construct();
 		$this->assets_path = base_url().'assets/';
-		$this->getApplicationTemplate();
-
 	}
 
-	function getApplicationTemplate(){
+	function getHeader($data = null){
+		$this->data['header'] = $this->load->view('template/header');
+	}
 
-		$resource_path = array(
-			'css' => $this->assets_path.'css',
-			'img' => $this->assets_path.'img',
-			'js' => $this->assets_path.'js',
-		);
-
-		$this->data['header'] = $this->load->view('template/header', $resource_path);
+	function getFooter($data = null){
 		$this->data['footer'] = $this->load->view('template/footer');
+	}
 
+	function setContent($dest = 'welcome_message', $data_header = null, $data_content = null, $data_footer = null){
+		$this->getHeader($data_header);
+		$this->load->view($dest, $data_content);
+		$this->getFooter($data_footer);
 	}
 
 }
