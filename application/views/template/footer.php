@@ -5,5 +5,6 @@
 
 			</div>
 		</footer>
+		<?php $this->render_js('bootstrap.min.js') ?>
 	</body>
 </html>

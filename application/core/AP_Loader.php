@@ -20,6 +20,14 @@ class AP_Loader extends CI_Loader{
 		return "";
 	}
 
+	function render_less($name = null){
+		if(!is_array($name)){
+			echo "<link href='".base_url()."assets/css/".$name.".less' rel='stylesheet/less' type='text/css'/>";
+			echo "<script src='".base_url()."assets/js/less.js' type='text/javascript'></script>";
+			return true;
+		}
+	}
+
 	function render_js($name = null){
 		if(!is_array($name)){
 			 echo "<script src='".base_url()."assets/js/".$name."' type='text/javascript'></script>";
