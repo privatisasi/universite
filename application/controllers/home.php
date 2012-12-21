@@ -6,10 +6,6 @@ class Home extends AP_Controller {
 
 	public function index()
 	{
-		$this->load->view('welcome_message');
-	}
-
-	public function test(){
 		$this->setContent();
 	}
 }
