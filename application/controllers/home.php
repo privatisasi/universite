@@ -8,6 +8,11 @@ class Home extends AP_Controller {
 	{
 		$this->setContent();
 	}
+
+	public function tri(){
+
+		$this->setContent('mahasiswa/tri');
+	}
 }
 
 /* End of file welcome.php */
