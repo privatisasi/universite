@@ -21,8 +21,18 @@
 				<!-- Navigation -->
 				<div class="span12">
 					<ul class="nav nav-pills">
+						
+						<?php if(!isset($login)) : ?>
 						<li><a href="#"><i class="icon-home icon-white"></i> Beranda</a></li>
 						<li><a href="#"><i class="icon-book icon-white"></i> Ketentuan Penggunaan</a></li>
+						<?php endif; ?>
+
+						<?php if(isset($login)) : ?>
+						<li><a href="#"><i class="icon-home icon-white"></i> Beranda</a></li>
+						<li><a href="#"><i class="icon-book icon-white"></i> Pengumuman</a></li>
+						<li><a href="#"><i class="icon-book icon-white"></i> Akademik</a></li>
+						<?php endif; ?>
+
 					</ul>
 				</div>
 			</nav>
