@@ -3,7 +3,7 @@
 		<footer class="container">
 			<div class="row">
 				<div class="span12 footer">
-					<p>&copy mahasiswa teknik informatika 2010</p>
+					<p>&copy mahasiswa web teknik informatika 2010</p>
 				</div>
 			</div>
 		</footer>
