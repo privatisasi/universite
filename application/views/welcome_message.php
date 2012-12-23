@@ -40,36 +40,34 @@
 						<li class="span3">
 							<div class="thumbnail">
 								<div class="caption">
-									<h4 class="lead">Halaman Personal</h4>
-									<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-									tempor incididunt ut labore et dolore magna aliqua. </p>
+									<h4 class="lead">Personal</h4>
+									<p> Mahasiswa dapat melihat dan melakukan pembaharuan terhadap data pribadinya. </p>
 								</div>
 							</div>
 						</li>
 						<li class="span3">
 							<div class="thumbnail">
 								<div class="caption">
-									<h4 class="lead">Halaman Personal</h4>
-									<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-									tempor incididunt ut labore et dolore magna aliqua. </p>
+									<h4 class="lead">Akademik</h4>
+									<p> Mahasiswa dapat melihat jejak akademiknya dari setiap semester dan pada setiap matakuliah </p>
 								</div>
 							</div>
 						</li>
 						<li class="span3">
 							<div class="thumbnail">
 								<div class="caption">
-									<h4 class="lead">Halaman Personal</h4>
-									<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-									tempor incididunt ut labore et dolore magna aliqua. </p>
+									<h4 class="lead">Portfolio</h4>
+									<p> 
+										Jejak kegiatan mahasiswa baik yang bersifat prestasi akademik dan non akademik tercatat disini
+									</p>
 								</div>
 							</div>
 						</li>
 						<li class="span3">
 							<div class="thumbnail">
 								<div class="caption">
-									<h4 class="lead">Halaman Personal</h4>
-									<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-									tempor incididunt ut labore et dolore magna aliqua. </p>
+									<h4 class="lead">Keuangan</h4>
+									<p> Segala pembiayaan yang dilakukan dan diterima mahasiswa </p>
 								</div>
 							</div>
 						</li>
