@@ -23,7 +23,7 @@
 | 3. Helper files
 | 4. Custom config files
 | 5. Language files
-| 6. Models
+| 6. ModelsKK
 |
 */
 
