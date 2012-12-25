@@ -13,8 +13,8 @@
 		</form>
 	</div>
 </div>
-<div class="row content">
-	<div class="span3 mhs">
+<div class="row content no-probe" id="gridalicious-list">
+	<div class="mhs item">
 		<div class="nim center">
 			<div><p>06560267</p></div>
 		</div>
@@ -48,7 +48,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="span3 mhs">
+	<div class="mhs item">
 		<div class="nim center">
 			<div><p>06560267</p></div>
 		</div>
@@ -70,7 +70,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="span3 mhs">
+	<div class="mhs item">
 		<div class="nim center">
 			<div><p>06560267</p></div>
 		</div>
@@ -93,7 +93,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="span3 mhs">
+	<div class="mhs item">
 		<div class="nim center">
 			<div><p>06560267</p></div>
 		</div>
@@ -123,7 +123,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="span3 mhs">
+	<div class="mhs item">
 		<div class="nim center">
 			<div><p>06560267</p></div>
 		</div>
@@ -150,7 +150,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="span3 mhs">
+	<div class="mhs item">
 		<div class="nim center">
 			<div><p>06560267</p></div>
 		</div>
@@ -184,7 +184,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="span3 mhs">
+	<div class="mhs item">
 		<div class="nim center">
 			<div><p>06560267</p></div>
 		</div>
@@ -218,7 +218,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="span3 mhs">
+	<div class="mhs item">
 		<div class="nim center">
 			<div><p>06560267</p></div>
 		</div>
@@ -253,3 +253,10 @@
 		</div>
 	</div>
 </div>
+<script type="text/javascript">
+	$("#gridalicious-list").gridalicious({
+		width:270,
+		gutter:30,
+		animate: true,
+	});
+</script>

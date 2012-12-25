@@ -5,6 +5,7 @@
 		<?php $this->render_css(array('bootstrap.min.css','bootstrap-responsive.min.css'));?>
 		<?php $this->render_less('style') ?>
 		<?php $this->render_js('jquery.js') ?>
+		<?php $this->render_js('jquery.gal.min.js') ?>
 	</head>
 	<body>
 		<div class="container main">
