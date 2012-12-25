@@ -12,9 +12,8 @@
 				<!-- Header Logo -->
 				<div class="span12">
 					<div class="page-header">
-					  	<h1>Universitas Muhammadiyah Malang</h1>
+						<p class="lead"><?php $this->render_img('sima.png') ?> <small><b><i>Sistem Informasi Mahasiswa</i></b></small></p>
 					</div>
-					<p class="pull-right"><small><i>Your Bright Future</i></small></p>
 				</div>
 			</header>
 			<nav class="row">
@@ -22,11 +21,6 @@
 				<div class="span12">
 					<ul class="nav nav-pills">
 						
-						<?php if(!isset($login)) : ?>
-						<li><?php echo anchor('home','<i class="icon-home icon-white"></i> Beranda') ?></li>
-						<li><?php echo anchor('term','<i class="icon-book icon-white"></i> Ketentuan Penggunaan') ?></li>
-						<?php endif; ?>
-
 						<?php if(isset($login)) : ?>
 						<li><?php echo anchor('home','<i class="icon-home icon-white"></i> Beranda') ?></li>
 						<li><?php echo anchor('profil','<i class="icon-user icon-white"></i> Profil') ?></li>
