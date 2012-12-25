@@ -13,7 +13,6 @@ html, body{
 @color4 : #BF0404;
 @color5 : #8D2120;
 
-
 .container.main{
 	padding-top:1em;
 	border-top:5px solid @color4;
@@ -34,13 +33,16 @@ html, body{
 ::-webkit-input-placeholder { text-align:right; font-size: 11px }
 /* mozilla solution */
 input:-moz-placeholder { text-align:right; font-size:11px;}
+input{
+	font-size: 13px!important;
+}
 .b-top-3{
 	margin-top: 3em;
 	border-top: 5px solid #d2d2d2;
 }
 .center{
 	text-align: center;
-	vertical-align: middle;
+	vertical-align: middle !important;
 }
 .left{
 	text-align: left;
@@ -101,6 +103,47 @@ nav{
 		height:100%;
 		vertical-align: middle;
 		margin-top: 1em;
+	}
+	legend{
+		border:none;
+	}
+	.mhs{
+		margin-bottom: 2em;
+	}
+	.mhs-list{
+		padding:10px;
+		background:whiteSmoke;
+		position:relative;
+		.tweet{
+			background: #00BBF5;
+			padding:5px;
+			margin-bottom: 5px;
+			color:#373737;
+			text-shadow:0 0.8px 0 #fff;
+			p{ padding:0; margin:0; font-size: 11px; line-height: 15px;}
+			.tweet-user{
+				font-weight: bold;
+			}
+		}
+		.fb{
+			background: #3B5998;
+			padding:5px;
+			margin-bottom: 5px;
+			color:#f2f2f2;
+			text-shadow:0 0.8px 0 #fff;
+			p{ padding:0; margin:0; font-size: 11px; line-height: 15px;}
+			.fb-user{
+				font-weight: bold;
+			}
+		}
+	}
+	.nim{
+		vertical-align: middle;
+		font-size: 18px;
+		font-weight: bold;
+		padding:0.8em;
+		background: #ccc;
+		text-shadow:0px 1px 0px #d2d2d2;
 	}
 }
 
