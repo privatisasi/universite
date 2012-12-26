@@ -13,6 +13,10 @@ html, body{
 @color4 : #BF0404;
 @color5 : #8D2120;
 
+a{
+	color:@color5;
+}
+
 .container.main{
 	padding-top:1em;
 	border-top:5px solid @color4;
@@ -62,6 +66,11 @@ input{
 	Header
 */
 header.header{
+	border-bottom: 1px solid @color5;
+	margin-bottom: 2em;
+	.lead{
+		margin-bottom: 5px;
+	}
 	.page-header{
 		margin-bottom: 10px;
 		margin-top: 10px;
@@ -78,11 +87,14 @@ header.header{
 	Navigation
 */
 nav{
+	.nav{
+		margin-bottom: 5px;
+	}
 	.nav-pills{
 		li{
 			a{
 				color:#fff;
-				background: @color4;
+				background: #373737;
 				margin-right: 0.5em;
 			}
 			a:hover{
@@ -110,7 +122,7 @@ nav{
 	.mhs{
 		margin-left: 0;
 	}
-	.mhs-list{
+	.mhs-list, .list-wrapper{
 		padding:10px;
 		background:whiteSmoke;
 		position:relative;
@@ -137,7 +149,7 @@ nav{
 			}
 		}
 	}
-	.nim{
+	.title{
 		vertical-align: middle;
 		font-size: 18px;
 		font-weight: bold;
@@ -145,8 +157,14 @@ nav{
 		background: #ccc;
 		text-shadow:0px 1px 0px #d2d2d2;
 	}
-}
 
+	#grid{
+		[class*="span"]{
+			margin-left: 0px;
+		}
+	}
+
+}
 
 /*
 	Footer

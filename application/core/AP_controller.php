@@ -48,13 +48,13 @@ class Secure_Controller extends AP_Controller{
     {
         parent::__construct();
  
-        $this->load->library('session');
-        $this->load->library('cookie');
-        $this->load->helper('url');
+        //$this->load->library('session');
+        $this->load->helper('cookie');
+        //$this->load->helper('url');
+        //var_dump($this->session->userdata('username')); die();
  
-        if($this->session->userdata('user') === FALSE and $this->input->cookie('user', TRUE))
-        {
-            redirect('auth', 'refresh');
+        if(!$this->session->userdata('username')){
+            return redirect('auth', 'refresh');
         }
     }
 

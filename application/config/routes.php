@@ -45,6 +45,11 @@ $route['mhs'] = 'user/show_mahasiswa';
 $route['mhs/(:num)'] = 'user/show_mahasiswa/nim/$1';
 $route['mhs/search/(:any)'] = 'user/show_mahasiswa/search/$1';
 
+$route['user'] = 'user/user_profile';
+$route['user/(:any)'] = 'user/user_profile/$1';
+
+$route['logout'] = 'auth/logout';
+
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */

@@ -8,7 +8,7 @@
 	jika sudah selesai debug extends Security_Controller{}
 	==================
 */
-class User_Profile extends Security_Controller{
+class User_Profile extends Secure_Controller{
 
 	protected $ids;
 	protected $nim;
@@ -17,6 +17,7 @@ class User_Profile extends Security_Controller{
 	// basic init
 	public function __construct(){
 		parent::__construct();
+		$this->load->model('User_Model','user_model');
 	}
 
 	/*
@@ -26,7 +27,15 @@ class User_Profile extends Security_Controller{
 		- notif ada penghargaan baru.
 	*/
 	function index(){
-		echo 'user landing page';
+		$nim = $this->session->userdata('username');
+		$user = $this->user_model->get_single($nim);
+		if($user and is_object($user)){
+			$this->data['user'] = $user;
+		}
+
+		$this->setContent('user/profile', $this->data);
+		
+
 	}
 	
 	/*
