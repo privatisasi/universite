@@ -11,23 +11,50 @@
 		<div class="container main">
 			<header class="row-fluid header">
 				<!-- Header Logo -->
-				<div class="span4">
+				<div class="span6">
 					<p class="lead"><?php $this->render_img('sima.png') ?> <small><b><i>Sistem Informasi Mahasiswa</i></b></small></p>
 				</div>
-				<div class="span8">
-					<nav class="row">
-						<!-- Navigation -->
-						<div class="span12">
-							<ul class="nav nav-pills">		
-								<?php if($this->session->userdata('logged_in') == true) : ?>
-								<li><?php echo anchor('home','<i class="icon-home icon-white"></i> Beranda') ?></li>
-								<li><?php echo anchor('profil','<i class="icon-user icon-white"></i> Profil') ?></li>
-								<li><?php echo anchor('pengumuman','<i class="icon-bullhorn icon-white"></i> Pengumuman') ?></li>
-								<li><?php echo anchor('akademik','<i class="icon-book icon-white"></i> Akademik') ?></li>
-								<?php endif; ?>
+				<div class="span6">
+					<nav class="navbar">
+					  
+					    <div class="container">
+					 
+					      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+					      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					      </a>
 
+					      <!-- Everything you want hidden at 940px or less, place within here -->
+					      <div class="nav-collapse collapse">
+					        <!-- .nav, .navbar-search, .navbar-form, etc -->
+					        <ul class="nav nav-pills">		
+								<?php if($this->session->userdata('logged_in') == true) : ?>
+								<li><?php echo anchor('user','<i class="icon-home"></i> Dashboard') ?></li>
+								<li class="dropdown">
+								    <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-envelope"></i> Message (4) <b class="caret"></b></a>
+								    <ul class="dropdown-menu">
+								    	<li><?php echo anchor('pengumuman',' + pengumuman') ?></li>
+								    	<li><?php echo anchor('message',' + message') ?></li>
+								    </ul>
+								</li>
+								<li class="dropdown">
+								    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Akademik <b class="caret"></b></a>
+								    <ul class="dropdown-menu">
+								    	<li><?php echo anchor('portfolio',' + portfolio') ?></li>
+								    	<li><?php echo anchor('keuangan',' + keuangan') ?></li>
+								    	<li><?php echo anchor('nilai',' + nilai') ?></li>
+								    	<li><?php echo anchor('krs',' + krs') ?></li>
+								    </ul>
+								</li>
+								<li><?php echo anchor('logout','Logout') ?></li>
+								<?php endif; ?>
 							</ul>
-						</div>
+					      </div>
+					 
+					    </div>
+					  
 					</nav>
 				</div>
 			</header>

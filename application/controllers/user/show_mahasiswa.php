@@ -14,16 +14,12 @@ class Show_Mahasiswa extends AP_Controller{
 		$this->setContent('mahasiswa/multi');
 
 	}
-
-	/*
-		fungsi ini digunakan untuk melihat data mahasiswa yang lain sebagai preview.
-		- ada informasi prestasi
-		- ada informasi data pribadi 
-			(nama lengkap, nim, jurusan, fakultas, tahun masuk, dan prestasi yang pernah diraih)
-	*/
+	
 	function nim($ids = null){
 		
-		$this->setContent('mahasiswa/single');
+		echo $ids;
+
+		//$this->setContent('mahasiswa/single');
 	}
 
 	function search($search_string){

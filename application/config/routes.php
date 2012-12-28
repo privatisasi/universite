@@ -42,7 +42,7 @@ $route['default_controller'] = "home";
 $route['404_override'] = '';
 
 $route['mhs'] = 'user/show_mahasiswa';
-$route['mhs/(:num)'] = 'user/show_mahasiswa/nim/$1';
+$route['mhs/(:num)'] = 'user/show_mahasiswa/nim/$1'; // nim yang diinputkan
 $route['mhs/search/(:any)'] = 'user/show_mahasiswa/search/$1';
 
 $route['user'] = 'user/user_profile';

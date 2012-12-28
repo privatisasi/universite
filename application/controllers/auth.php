@@ -11,6 +11,7 @@ class Auth extends CI_Controller{
 	}
 
 	function index(){
+		
 		$username = $this->input->post('username');
 		$password = $this->input->post('password');
 
@@ -18,9 +19,10 @@ class Auth extends CI_Controller{
 			$this->session->set_flashdata('error','undesire error');
 			return redirect('home', 'refresh');
 		} else {
+			
 			$auth_res = $this->user_model->check_auth($username, $password);
+			
 			if($auth_res){
-				//var_dump($auth_res);die();
 
 				$new_session = array(
 					'username' 	=> $username,

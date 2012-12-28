@@ -6,6 +6,10 @@ class Home extends AP_Controller {
 
 	public function index()
 	{
+		if($this->session->userdata('username')){
+			return redirect('user');
+		}
+		
 		$this->setContent();
 	}
 

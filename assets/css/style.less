@@ -48,6 +48,9 @@ input{
 	text-align: center;
 	vertical-align: middle !important;
 }
+.bold{
+	font-weight: bold;
+}
 .left{
 	text-align: left;
 }
@@ -91,17 +94,7 @@ nav{
 		margin-bottom: 5px;
 	}
 	.nav-pills{
-		li{
-			a{
-				color:#fff;
-				background: #373737;
-				margin-right: 0.5em;
-			}
-			a:hover{
-				color:#fff;
-				background: @color5;
-			}
-		}
+		
 	}
 }
 
@@ -121,6 +114,7 @@ nav{
 	}
 	.mhs{
 		margin-left: 0;
+		box-shadow: 0 0 5px 0 #909090;
 	}
 	.mhs-list, .list-wrapper{
 		padding:10px;
@@ -158,12 +152,18 @@ nav{
 		text-shadow:0px 1px 0px #d2d2d2;
 	}
 
-	#grid{
-		[class*="span"]{
-			margin-left: 0px;
+	.tugas, .reminder{
+		li{
+			list-style: none;
 		}
 	}
 
+}
+#grid{
+	.item{
+		//margin-left: 20px;
+		//padding-bottom: 20px;
+	}
 }
 
 /*

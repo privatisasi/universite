@@ -21,11 +21,17 @@ class User_Model extends CI_Model{
 			return false;
 		} else {
 			
+
+			// Active Record
+			// utilitas yang dibuat Ci untuk mempermudah interaksi database dengan beberapa fasilitas
+			// seperti kemanan 'escape string', object mapping, dan lain lain.
 			$this->db->where('nim', $username);
 			$this->db->where('password', sha1($password));
 			$this->db->limit('1');
 
 			$m_user = $this->db->get('mahasiswa');
+
+			// SELECT * FROM mahasiswa WHERE nim = $username AND password = SHA1($password);
 
 			foreach ($m_user->result() as $obj) {
 				return $obj;

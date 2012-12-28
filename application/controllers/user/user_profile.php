@@ -13,19 +13,11 @@ class User_Profile extends Secure_Controller{
 	protected $ids;
 	protected $nim;
 
-
-	// basic init
 	public function __construct(){
 		parent::__construct();
 		$this->load->model('User_Model','user_model');
 	}
 
-	/*
-		basic landing page dari mahasiswa. ditampilkan info mahasiswa dan beberapa simpulan data tertentu contoh
-		- notif ada pesan baru
-		- notif ada pesan dari keuangan
-		- notif ada penghargaan baru.
-	*/
 	function index(){
 		$nim = $this->session->userdata('username');
 		$user = $this->user_model->get_single($nim);
@@ -34,8 +26,6 @@ class User_Profile extends Secure_Controller{
 		}
 
 		$this->setContent('user/profile', $this->data);
-		
-
 	}
 	
 	/*
